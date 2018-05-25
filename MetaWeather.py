@@ -26,7 +26,7 @@ def weather(woeid):
         print(f'Max Temp: {round(n["max_temp"], 2)}')
         print(f'Forecast: {n["weather_state_name"]}')
 
+
 search_loc = location_id(input('Enter location:\n'))
 weather(search_loc)
 cprint(figlet_format("\nBoom Shakalaka!", font='starwars'), 'yellow', 'on_red', attrs=['bold'])
-
