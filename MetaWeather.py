@@ -1,11 +1,5 @@
 import requests
-import sys
-from colorama import init
 
-# from termcolor import cprint
-# from pyfiglet import figlet_format
-
-init(strip=not sys.stdout.isatty())  # strip colors if stdout is redirected
 
 
 def location_id(location):
@@ -30,4 +24,3 @@ def weather(woeid):
 
 search_loc = location_id(input('Enter location:\n'))
 weather(search_loc)
-# cprint(figlet_format("\nBoom Shakalaka!", font='starwars'), 'yellow', 'on_red', attrs=['bold'])
