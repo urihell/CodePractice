@@ -59,7 +59,9 @@ def choose_first():
 
 # Check space availability
 def space_check(board, position):
-    return board[position] != 'X ' or board[position] != 'O'
+    # return board[position] != 'X ' or board[position] != 'O'
+    return board[position] == ' '
+
 
 # Check if board is full
 def full_board_check(board):
