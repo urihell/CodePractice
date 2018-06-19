@@ -18,6 +18,7 @@ def display_board(board):
     print('   |   |')
 
 
+
 # Player 1 chooses marker
 def player_input():
     marker =''
