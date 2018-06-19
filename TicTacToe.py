@@ -66,9 +66,9 @@ def space_check(board, position):
 # Check if board is full
 def full_board_check(board):
     for i in range(1, 10):
-        if space_check(board, i) is False:
+        if space_check(board, i):
             return False
-        return True
+    return True
 
 
 # Check if a player's position can be used
