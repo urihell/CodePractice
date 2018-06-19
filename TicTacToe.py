@@ -3,7 +3,7 @@ import random
 
 # Build the board display
 def display_board(board):
-    print('\n' * 10)
+    print('\n' * 5)
     print('   |   |')
     print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
     print('   |   |')
@@ -15,6 +15,7 @@ def display_board(board):
     print('   |   |')
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |')
+    print('\n' * 3)
 
 
 # Player 1 chooses marker
@@ -58,16 +59,12 @@ def choose_first():
 
 # Check space availability
 def space_check(board, position):
-    if board[position] == 'X' or board[position] == 'O':
-        return False
-    else:
-        return True
-
+    return board[position] != 'X ' or board[position] != 'O'
 
 # Check if board is full
 def full_board_check(board):
     for i in range(1, 10):
-        if space_check(board, i):
+        if space_check(board, i) == False:
             return False
         return True
 
@@ -76,7 +73,7 @@ def full_board_check(board):
 def player_choice(board):
     position = 0
     while position not in [1, 2, 3, 4, 5, 6, 7, 8, 9] or not space_check(board, position):
-        return position
+        position = int(input('Choose your next position: (1-9) '))
 
 
 # Replay the game
