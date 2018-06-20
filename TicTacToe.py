@@ -1,4 +1,5 @@
 import random
+import os
 
 
 # Build the board display
@@ -20,6 +21,10 @@ def display_board(board):
 
 # Player 1 chooses marker
 def player_input():
+    '''
+    OUTPUT = (player 1 marker, player 2 marker)
+    '''
+
     marker = ''
 
     while not (marker == 'O' or marker == 'X'):
@@ -76,7 +81,7 @@ def player_choice(board):
     position = 0
     while position not in [1, 2, 3, 4, 5, 6, 7, 8, 9] or not space_check(board, position):
         position = int(input('Choose your next position: (1-9) '))
-        return  position
+    return  position
 
 
 # Replay the game
@@ -116,12 +121,12 @@ while True:
 
             if win_check(the_board, player1_marker):
                 display_board(the_board)
-                print('Congratulations! You won the game!')
+                print('****Congratulations! You won the game!****\n\n')
                 game_on = False
             else:
                 if full_board_check(the_board):
                     display_board(the_board)
-                    print("The game is a draw!")
+                    print("The game is a draw!\n\n")
                     break
                 else:
                     turn = 'Player 2'
@@ -134,12 +139,12 @@ while True:
 
             if win_check(the_board, player2_marker):
                 display_board(the_board)
-                print('Congratulations! You won the game!')
+                print('****Congratulations! You won the game!****\n\n')
                 game_on = False
             else:
                 if full_board_check(the_board):
                     display_board(the_board)
-                    print("The game is a draw!")
+                    print("The game is a draw!\n\n")
                     break
                 else:
                     turn = 'Player 1'
