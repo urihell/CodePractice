@@ -1,6 +1,6 @@
 class Account:
 
-    def __init__(self,owner,balance):
+    def __init__(self,owner,balance=0):
 
         self.owner = owner
         self.balance = balance
@@ -15,7 +15,7 @@ class Account:
         print("Deposit Accepted")
 
 
-    def withdraw(self,withdraw):
+    def withdrawl(self,withdraw):
         if (self.balance - withdraw) >= 0:
             self.balance = self.balance - withdraw
             print ("Withdrawl Accepted")
@@ -37,11 +37,11 @@ acct1.deposit(100)
 
 print (acct1)
 
-acct1.withdraw(50)
+acct1.withdrawl(50)
 
 print (acct1)
 
-acct1.withdraw(500)
+acct1.withdrawl(500)
 
 print (acct1)
 
