@@ -24,7 +24,7 @@ class Account:
             print ("Funds Unavailable!")
 
 
-#TEST THE CLASS ABOVE
+#TEST THE CLASS ABOVE:
 
 acct1 = Account('Jose',100)
 print (acct1)
