@@ -153,6 +153,7 @@ def main():
             print(Fore.RED + '\n Please use alphabetic characters.' + Style.RESET_ALL)
             continue
     bearer_token2 = input('\nEnter admin bearer token: ')
+
     while True:
         account_id2 = input('Account ID: ')
 
