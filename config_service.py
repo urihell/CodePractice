@@ -1,7 +1,5 @@
 import json
-import colorama
 import requests
-from colorama import Fore, Style
 
 
 class GetConfig:
@@ -98,40 +96,39 @@ class PostConfig:
         endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
         post = requests.post(endpoint + entity + '/' + account_id, headers=headers, data=config_dumps)
 
-        print(Fore.LIGHTGREEN_EX + config_dumps + '\n')
-        print(Fore.LIGHTGREEN_EX + post.text + '\n')
+        print(config_dumps + '\n')
+        print(post.text + '\n')
 
 
 def main():
     global post_values
-    colorama.init()
 
-    while True:
+    while 1:
         env1 = input('\n\n\nCopy settings FROM:\n- Dev\n- Staging\n- Sandbox\n(Choose environment): ').lower()
 
         if env1.isalpha():
             break
         else:
-            print(Fore.RED + '\n Please use alphabetic characters.' + Style.RESET_ALL)
+            print('\n Please use alphabetic characters.')
             continue
     bearer_token1 = input('\nEnter admin bearer token: ')
 
-    while True:
+    while 1:
         account_id1 = input('Account ID: ')
 
         if account_id1.isdigit():
             break
         else:
-            print(Fore.RED + '\nPlease use numeric characters.' + Style.RESET_ALL)
+            print('\nPlease use numeric characters.')
             continue
 
-    while True:
+    while 1:
         entity1 = input('\n Account entity (dispatcher/technician/customer): ')
 
         if entity1 == 'dispatcher' or entity1 == 'technician' or entity1 == 'customer':
             break
         else:
-            print(Fore.RED + '\nPlease pick a valid entity.' + Style.RESET_ALL)
+            print('\nPlease pick a valid entity.')
             continue
 
     raw_config = GetConfig('-' + env1)
@@ -141,49 +138,48 @@ def main():
                              sort_keys=True)
     config_report = raw_config.get_report(account_id1, entity1, bearer_token1)
 
-    print(Fore.LIGHTGREEN_EX + config_json + Style.RESET_ALL)
-    print(Fore.CYAN + '\n\n***SETTINGS SAVED IN MEMORY***' + Style.RESET_ALL)
+    print(config_json)
+    print('\n\n***SETTINGS SAVED IN MEMORY***')
 
-    while True:
+    while 1:
         env2 = input('\n\n\nCopy settings TO:\n- Dev\n- Staging\n- Sandbox\n(Choose environment): ').lower()
 
         if env2.isalpha():
             break
         else:
-            print(Fore.RED + '\n Please use alphabetic characters.' + Style.RESET_ALL)
+            print('\n Please use alphabetic characters.')
             continue
     bearer_token2 = input('\nEnter admin bearer token: ')
 
-    while True:
+    while 1:
         account_id2 = input('Account ID: ')
 
         if account_id2.isdigit():
             break
         else:
-            print(Fore.RED + '\nPlease use numeric characters.' + Style.RESET_ALL)
+            print('\nPlease use numeric characters.')
             continue
 
-    while True:
+    while 1:
         entity2 = input('\n Account entity (dispatcher/technician/customer): ')
 
         if entity2 == 'dispatcher' or entity2 == 'technician' or entity2 == 'customer':
             break
         else:
-            print(Fore.RED + '\nPlease pick a valid entity.' + Style.RESET_ALL)
+            print('\nPlease pick a valid entity.')
             continue
 
-    proceed = input(
-        Fore.LIGHTGREEN_EX + 'Are you sure you want to copy the settings from %s to %s? (y/n) [ENTER=Abort]? ' % (
-            env1.upper(), env2.upper()) + Style.RESET_ALL)
+    proceed = input('Are you sure you want to copy the settings from %s to %s? (y/n) [ENTER=Abort]? ' % (
+            env1.upper(), env2.upper()))
 
     if proceed == 'y' or proceed == 'yes' or proceed == 'Yes':
         post_values = {}
         for item in config_report:
-            if config_report[item]["inherited"] == False:
+            if not config_report[item]["inherited"]:
                 config_value = raw_config.get_dictionary_value(config, item)
                 raw_config.set_dictionary_value(post_values, item, config_value)
     else:
-        print(Fore.RED + '\nOperation stopped\n')
+        print('\nOperation stopped\n')
 
     post_config = PostConfig('-' + env2)
     post_config.post_config(account_id2, entity2, bearer_token2, post_values)
