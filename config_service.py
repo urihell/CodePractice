@@ -45,6 +45,7 @@ class GetConfig:
         :param key:
         :return: split json fields and add to a list
         """
+
         key_parts = key.split(".")
 
         current_value = dictionary
@@ -56,12 +57,12 @@ class GetConfig:
 
     def set_dictionary_value(self, dictionary, key, value):
         """
-
         :param dictionary:
         :param key:
         :param value:
         :return:
         """
+
         key_parts = key.split(".")
         last_key = key_parts.pop()
 
@@ -100,39 +101,65 @@ class PostConfig:
         print(post.text + '\n')
 
 
+class Inputs:
+
+    def __init__(self):
+
+        pass
+
+    def environment(self):
+
+        while 1:
+            env = input('\n\n\nEnvironment:\n- Dev\n- Staging\n- Sandbox\n(Choose environment): ').lower()
+
+            if env in ['dev', 'staging', 'sandbox']:
+                return env
+
+            else:
+                print('\n Not a valid environment!')
+                continue
+
+    def bearer_token(self):
+
+        bearer_token = input('\nEnter admin bearer token: ')
+        return bearer_token
+
+    def account(self):
+
+        while 1:
+            account_id = input('Account ID: ')
+
+            if account_id.isdigit():
+                return account_id
+
+            else:
+                print('\nNot a valid account ID!.')
+                continue
+
+    def entity(self):
+
+        while 1:
+            entity_role = input('\n Account entity (dispatcher/technician/customer): ')
+
+            if entity_role in ['dispatcher', 'technician', 'customer']:
+                return entity_role
+
+            else:
+                print('\nNot a valid entity role!')
+                continue
+
+
 def main():
     global post_values
+    inputs = Inputs()
+    env1 = inputs.environment()
 
-    while 1:
-        env1 = input('\n\n\nCopy settings FROM:\n- Dev\n- Staging\n- Sandbox\n(Choose environment): ').lower()
-
-        if env1.isalpha():
-            break
-        else:
-            print('\n Please use alphabetic characters.')
-            continue
-    bearer_token1 = input('\nEnter admin bearer token: ')
-
-    while 1:
-        account_id1 = input('Account ID: ')
-
-        if account_id1.isdigit():
-            break
-        else:
-            print('\nPlease use numeric characters.')
-            continue
-
-    while 1:
-        entity1 = input('\n Account entity (dispatcher/technician/customer): ')
-
-        if entity1 == 'dispatcher' or entity1 == 'technician' or entity1 == 'customer':
-            break
-        else:
-            print('\nPlease pick a valid entity.')
-            continue
-
+    bearer_token1 = inputs.bearer_token()
+    account_id1 = inputs.account()
+    entity1 = inputs.entity()
     raw_config = GetConfig('-' + env1)
     config = raw_config.get(account_id1, entity1, bearer_token1)
+
     config_json = json.dumps({"overwrite": False, "config": raw_config.get(account_id1, entity1, bearer_token1)},
                              indent=4,
                              sort_keys=True)
@@ -141,36 +168,13 @@ def main():
     print(config_json)
     print('\n\n***SETTINGS SAVED IN MEMORY***')
 
-    while 1:
-        env2 = input('\n\n\nCopy settings TO:\n- Dev\n- Staging\n- Sandbox\n(Choose environment): ').lower()
-
-        if env2.isalpha():
-            break
-        else:
-            print('\n Please use alphabetic characters.')
-            continue
-    bearer_token2 = input('\nEnter admin bearer token: ')
-
-    while 1:
-        account_id2 = input('Account ID: ')
-
-        if account_id2.isdigit():
-            break
-        else:
-            print('\nPlease use numeric characters.')
-            continue
-
-    while 1:
-        entity2 = input('\n Account entity (dispatcher/technician/customer): ')
-
-        if entity2 == 'dispatcher' or entity2 == 'technician' or entity2 == 'customer':
-            break
-        else:
-            print('\nPlease pick a valid entity.')
-            continue
+    env2 = inputs.environment()
+    bearer_token2 = inputs.bearer_token()
+    account_id2 = inputs.account()
+    entity2 = inputs.entity()
 
     proceed = input('Are you sure you want to copy the settings from %s to %s? (y/n) [ENTER=Abort]? ' % (
-            env1.upper(), env2.upper()))
+        env1.upper(), env2.upper()))
 
     if proceed == 'y' or proceed == 'yes' or proceed == 'Yes':
         post_values = {}
