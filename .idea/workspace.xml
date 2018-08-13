@@ -5,8 +5,8 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7a75f99-753f-4ca0-a1b3-0b7d9f8862e3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c7a75f99-753f-4ca0-a1b3-0b7d9f8862e3" name="Default" comment="Code improvements.">
+      <change afterPath="$PROJECT_DIR$/Tkinter_practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_service.py" afterDir="false" />
     </list>
@@ -21,9 +21,10 @@
     <session id="1468588923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -33,22 +34,22 @@
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="148" />
           <entry key="json" value="8" />
-          <entry key="py" value="16061" />
-          <entry key="txt" value="219" />
+          <entry key="py" value="16367" />
+          <entry key="txt" value="281" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="PLAIN_TEXT" value="367" />
-          <entry key="Python" value="15984" />
+          <entry key="PLAIN_TEXT" value="429" />
+          <entry key="Python" value="16290" />
           <entry key="Scratch" value="83" />
         </counts>
       </usages-collector>
@@ -56,7 +57,7 @@
         <counts>
           <entry key="crm" value="1" />
           <entry key="json" value="21" />
-          <entry key="py" value="18" />
+          <entry key="py" value="19" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -64,7 +65,7 @@
         <counts>
           <entry key="JSON" value="20" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="13" />
+          <entry key="Python" value="14" />
           <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
@@ -75,12 +76,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174">
-              <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+            <state relative-caret-position="209">
+              <caret line="163" column="11" lean-forward="true" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1534048163423" expanded="true" signature="3162:4244" ph="..." />
+                <marker date="1534120309302" expanded="true" signature="3162:4764" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tkinter_practice.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -113,6 +123,7 @@
       <find>while True</find>
       <find>entity_role</find>
       <find>self.</find>
+      <find>global</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -161,6 +172,7 @@
         <option value="$PROJECT_DIR$/data_report.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_11.py" />
+        <option value="$PROJECT_DIR$/Tkinter_practice.py" />
         <option value="$PROJECT_DIR$/config_service.py" />
       </list>
     </option>
@@ -176,7 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -199,11 +210,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Uriel/Documents/GitHub/CodePractice/front_back class.py" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534048163806" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534120322217" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -265,7 +277,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="config_compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Tkinter_practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CodePractice" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,7 +289,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config_compare.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tkinter_practice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -360,17 +372,17 @@
     <list>
       <item itemvalue="Python.BlackJack" />
       <item itemvalue="Python.config_service" />
-      <item itemvalue="Python.config_compare" />
       <item itemvalue="Python.scratch_11" />
       <item itemvalue="Python.scratch_11 (1)" />
+      <item itemvalue="Python.Tkinter_practice" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.config_service" />
+        <item itemvalue="Python.Tkinter_practice" />
         <item itemvalue="Python.scratch_11 (1)" />
         <item itemvalue="Python.scratch_11" />
         <item itemvalue="Python.BlackJack" />
-        <item itemvalue="Python.config_compare" />
       </list>
     </recent_temporary>
   </component>
@@ -483,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533946566768</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Code improvements.">
+      <created>1534048195911</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1534048195911</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -498,10 +517,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1941392" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1965812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -510,7 +529,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299462" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" weight="0.36858973" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.10053476" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.27266082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,7 +566,8 @@
     <MESSAGE value="Test __name__ =='__main__'" />
     <MESSAGE value="Unittest example." />
     <MESSAGE value="A script that takes the configuration setting from one environment and applies it to another environment while considering inheritance." />
-    <option name="LAST_COMMIT_MESSAGE" value="A script that takes the configuration setting from one environment and applies it to another environment while considering inheritance." />
+    <MESSAGE value="Code improvements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code improvements." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,13 +837,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tkinter_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config_service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="58" column="11" lean-forward="true" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+        <state relative-caret-position="209">
+          <caret line="163" column="11" lean-forward="true" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1534048163423" expanded="true" signature="3162:4244" ph="..." />
+            <marker date="1534120309302" expanded="true" signature="3162:4764" ph="..." />
           </folding>
         </state>
       </provider>

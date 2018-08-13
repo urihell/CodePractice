@@ -148,9 +148,20 @@ class Inputs:
                 print('\nNot a valid entity role!')
                 continue
 
+    def proceed(self, proceed, config_report, raw_config, config):
+        global post_values
+        if proceed in ['y', 'yes', 'Yes', 'YES']:
+            post_values = {}
+            for item in config_report:
+                if not config_report[item]["inherited"]:
+                    config_value = raw_config.get_dictionary_value(config, item)
+                    raw_config.set_dictionary_value(post_values, item, config_value)
+        else:
+            print('\nOperation stopped\n')
+        return post_values
+
 
 def main():
-    global post_values
     inputs = Inputs()
     env1 = inputs.environment()
 
@@ -175,15 +186,7 @@ def main():
 
     proceed = input('Are you sure you want to copy the settings from %s to %s? (y/n) [ENTER=Abort]? ' % (
         env1.upper(), env2.upper()))
-
-    if proceed == 'y' or proceed == 'yes' or proceed == 'Yes':
-        post_values = {}
-        for item in config_report:
-            if not config_report[item]["inherited"]:
-                config_value = raw_config.get_dictionary_value(config, item)
-                raw_config.set_dictionary_value(post_values, item, config_value)
-    else:
-        print('\nOperation stopped\n')
+    post_values = inputs.proceed(proceed, config_report, raw_config, config)
 
     post_config = PostConfig('-' + env2)
     post_config.post_config(account_id2, entity2, bearer_token2, post_values)
