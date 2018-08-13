@@ -17,7 +17,10 @@ class GetConfig:
 
         headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
                    'Authorization': 'Bearer ' + admin_token}
-        endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
+        if self.env is None:
+            endpoint = 'https://admin-api.dispatch.me/config/account_'
+        else:
+            endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
         r = requests.get(endpoint + entity + '/' + account_id, headers=headers)
         r_raw = r.content
         config_dict = json.loads(r_raw)
@@ -33,7 +36,10 @@ class GetConfig:
 
         headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
                    'Authorization': 'Bearer ' + admin_token}
-        endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
+        if self.env is None:
+            endpoint = 'https://admin-api.dispatch.me/config/account_'
+        else:
+            endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
         r = requests.get(endpoint + entity + '/' + account_id + '?report=true', headers=headers)
         r_raw = r.content
         report_dict = json.loads(r_raw)
@@ -108,24 +114,34 @@ class Inputs:
         pass
 
     def environment(self):
+        """
+        :return: takes environment input and validates against existing environments
+        """
 
         while 1:
-            env = input('\n\n\nEnvironment:\n- Dev\n- Staging\n- Sandbox\n(Choose environment): ').lower()
+            env = input('\nEnvironment:\n- Dev\n- Staging\n- Sandbox\n- Production \n(Choose environment): ').lower()
 
-            if env in ['dev', 'staging', 'sandbox']:
-                return env
+            if env in ['dev', 'staging', 'sandbox', 'production']:
+                if env == 'production':
+                    return None
+                else:
+                    return '-' + env
 
             else:
                 print('\n Not a valid environment!')
                 continue
 
     def bearer_token(self):
-
+        """
+        :return: takes environment bearer_token
+        """
         bearer_token = input('\nEnter admin bearer token: ')
         return bearer_token
 
     def account(self):
-
+        """
+        :return: takes an account id and validate it is numerical
+        """
         while 1:
             account_id = input('Account ID: ')
 
@@ -137,6 +153,9 @@ class Inputs:
                 continue
 
     def entity(self):
+        """
+        :return: takes entity role and validates it.
+        """
 
         while 1:
             entity_role = input('\n Account entity (dispatcher/technician/customer): ')
@@ -149,6 +168,13 @@ class Inputs:
                 continue
 
     def proceed(self, proceed, config_report, raw_config, config):
+        """
+        :param proceed:
+        :param config_report:
+        :param raw_config:
+        :param config:
+        :return: checks if proceed = y and checks for inherited configs
+        """
         global post_values
         if proceed in ['y', 'yes', 'Yes', 'YES']:
             post_values = {}
@@ -168,7 +194,7 @@ def main():
     bearer_token1 = inputs.bearer_token()
     account_id1 = inputs.account()
     entity1 = inputs.entity()
-    raw_config = GetConfig('-' + env1)
+    raw_config = GetConfig(env1)
     config = raw_config.get(account_id1, entity1, bearer_token1)
 
     config_json = json.dumps({"overwrite": False, "config": raw_config.get(account_id1, entity1, bearer_token1)},
@@ -188,7 +214,7 @@ def main():
         env1.upper(), env2.upper()))
     post_values = inputs.proceed(proceed, config_report, raw_config, config)
 
-    post_config = PostConfig('-' + env2)
+    post_config = PostConfig(env2)
     post_config.post_config(account_id2, entity2, bearer_token2, post_values)
 
 
