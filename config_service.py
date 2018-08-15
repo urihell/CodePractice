@@ -24,7 +24,11 @@ class GetConfig:
         r = requests.get(endpoint + entity + '/' + account_id, headers=headers)
         r_raw = r.content
         config_dict = json.loads(r_raw)
-        return config_dict
+        if 'error' in config_dict and config_dict['error'] == 'Unauthorized':
+            print("Invalid bearer token!")
+            exit()
+        else:
+            return config_dict
 
     def get_report(self, account_id, entity, admin_token):
         """
@@ -102,9 +106,13 @@ class PostConfig:
                    'Authorization': 'Bearer ' + admin_token}
         endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
         post = requests.post(endpoint + entity + '/' + account_id, headers=headers, data=config_dumps)
-
-        print(config_dumps + '\n')
-        print(post.text + '\n')
+        # post_response=post.text
+        if '{"error":"Unauthorized"}' in post.text:
+            print("Invalid bearer token!")
+            exit()
+        else:
+            print(config_dumps + '\n')
+            print(post.text + '\n')
 
 
 class Inputs:
@@ -197,12 +205,11 @@ def main():
     raw_config = GetConfig(env1)
     config = raw_config.get(account_id1, entity1, bearer_token1)
 
-    config_json = json.dumps({"overwrite": False, "config": raw_config.get(account_id1, entity1, bearer_token1)},
-                             indent=4,
-                             sort_keys=True)
+    # config_json = json.dumps({"overwrite": False, "config": raw_config.get(account_id1, entity1, bearer_token1)},
+    #                          indent=4,
+    #                          sort_keys=True)
     config_report = raw_config.get_report(account_id1, entity1, bearer_token1)
 
-    print(config_json)
     print('\n\n***SETTINGS SAVED IN MEMORY***')
 
     env2 = inputs.environment()

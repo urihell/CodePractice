@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7a75f99-753f-4ca0-a1b3-0b7d9f8862e3" name="Default" comment="Added production environment.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tkinter_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tkinter_practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_service.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,13 +20,13 @@
     <session id="1468588923">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.35" value="1" />
@@ -36,14 +35,14 @@
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="148" />
           <entry key="json" value="8" />
-          <entry key="py" value="17010" />
+          <entry key="py" value="17404" />
           <entry key="txt" value="313" />
         </counts>
       </usages-collector>
@@ -51,7 +50,7 @@
         <counts>
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="461" />
-          <entry key="Python" value="16851" />
+          <entry key="Python" value="17245" />
           <entry key="Scratch" value="165" />
         </counts>
       </usages-collector>
@@ -59,17 +58,17 @@
         <counts>
           <entry key="ax" value="1" />
           <entry key="crm" value="3" />
-          <entry key="json" value="21" />
-          <entry key="py" value="21" />
+          <entry key="json" value="22" />
+          <entry key="py" value="24" />
           <entry key="txt" value="2" />
           <entry key="uriel_training" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="20" />
+          <entry key="JSON" value="21" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="14" />
+          <entry key="Python" value="17" />
           <entry key="Scratch" value="8" />
         </counts>
       </usages-collector>
@@ -80,11 +79,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2565">
-              <caret line="171" column="23" lean-forward="true" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+            <state relative-caret-position="505">
+              <caret line="125" column="32" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1534196399091" expanded="true" signature="3390:5667" ph="..." />
+                <marker date="1534342336855" expanded="true" signature="3717:5994" ph="..." />
               </folding>
             </state>
           </provider>
@@ -93,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="600">
+              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -114,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tkinter_practice.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="495">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -199,16 +198,17 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.json" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_11.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_12.py" />
-        <option value="$PROJECT_DIR$/config_service.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py" />
         <option value="$PROJECT_DIR$/Tkinter_practice.py" />
+        <option value="$PROJECT_DIR$/config_service.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-6" />
+    <option name="y" value="-1638" />
     <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="height" value="1282" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -216,7 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,13 +236,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Uriel/Documents/GitHub/CodePractice/front_back class.py" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534299793271" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534342383617" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -271,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tkinter_practice">
+  <component name="RunManager" selected="Python.config_service">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -406,9 +406,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.config_service" />
         <item itemvalue="Python.Tkinter_practice" />
         <item itemvalue="Python.scratch_13" />
-        <item itemvalue="Python.config_service" />
         <item itemvalue="Python.scratch_12" />
         <item itemvalue="Python.scratch_11 (1)" />
       </list>
@@ -551,7 +551,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534125258070</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added production environment.">
+      <created>1534299791654</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1534299791654</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added production environment.">
+      <created>1534299837606</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1534299837606</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -566,10 +580,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="-6" y="-1638" width="1680" height="1282" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2008547" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2032967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -578,7 +592,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299462" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.07058824" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.3605042" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.27266082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -773,13 +787,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requestbin/web.py" />
     <entry file="file://$PROJECT_DIR$/requestbin/setup.py" />
-    <entry file="file://$PROJECT_DIR$/simple1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -791,13 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config_cancelReasons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
     </entry>
@@ -832,16 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
           <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post_config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config_compare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -889,27 +879,25 @@
     </entry>
     <entry file="file:///private/var/folders/55/w4zxct2n7w1fc540crwcztbr0000gn/T/6997e9d7-5d7c-4382-9e01-434f1204dec9/connector-agent-config-sbx/0.0.1/account/107/ax" />
     <entry file="file:///private/var/folders/55/w4zxct2n7w1fc540crwcztbr0000gn/T/6997e9d7-5d7c-4382-9e01-434f1204dec9/connector-agent-config-sbx/0.0.1/account/112/crm" />
+    <entry file="file:///private/var/folders/55/w4zxct2n7w1fc540crwcztbr0000gn/T/5f4b4c23-13f6-49e5-8248-142b812417c9/connector-agent-config-dev/0.0.1/account/500/crm" />
+    <entry file="file:///private/var/folders/55/w4zxct2n7w1fc540crwcztbr0000gn/T/5f4b4c23-13f6-49e5-8248-142b812417c9/connector-agent-config-dev/0.0.1/account/474/uriel_training" />
+    <entry file="file://$PROJECT_DIR$/config_compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post_config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="600">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/55/w4zxct2n7w1fc540crwcztbr0000gn/T/5f4b4c23-13f6-49e5-8248-142b812417c9/connector-agent-config-dev/0.0.1/account/500/crm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/55/w4zxct2n7w1fc540crwcztbr0000gn/T/5f4b4c23-13f6-49e5-8248-142b812417c9/connector-agent-config-dev/0.0.1/account/474/uriel_training">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -922,18 +910,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tkinter_practice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config_cancelReasons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config_service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="171" column="23" lean-forward="true" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+        <state relative-caret-position="505">
+          <caret line="125" column="32" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="32" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1534196399091" expanded="true" signature="3390:5667" ph="..." />
+            <marker date="1534342336855" expanded="true" signature="3717:5994" ph="..." />
           </folding>
         </state>
       </provider>
