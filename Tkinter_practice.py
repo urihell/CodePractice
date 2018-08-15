@@ -30,7 +30,7 @@ class Window(Frame):
         quitButton = Button(self, text="Exit",command=self.client_exit)
 
         # placing the button on my window
-        quitButton.place(x=0, y=0)
+        quitButton.place(x=10, y=20)
 
 
 

@@ -12,7 +12,7 @@ class GetConfig:
         :param entity:
         :param admin_token:
         :param account_id:
-        :return: GET json payload of all the account configurations
+        :return: GET json payload of account configurations
         """
 
         headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
