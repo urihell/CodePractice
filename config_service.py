@@ -2,12 +2,19 @@ import json
 import requests
 
 
-class GetConfig:
+class ConfigClient:
 
-    def __init__(self, env=None):
+    def __init__(self, env=None, admin_token=None, account_id=None, entity=None):
         self.env = env
+        self.account_id = account_id
+        self.entity = entity
+        self.admin_token = admin_token
 
-    def get(self, account_id, entity, admin_token):
+    def __str__(self):
+        return 'Environment: {}\nAdmin token: {}\nAccount ID: {}\nEntity: {}'.format(self.env, self.admin_token,
+                                                                                     self.account_id, self.entity)
+
+    def get_account_config(self):
         """
         :param entity:
         :param admin_token:
@@ -16,21 +23,22 @@ class GetConfig:
         """
 
         headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
-                   'Authorization': 'Bearer ' + admin_token}
+                   'Authorization': 'Bearer ' + self.admin_token}
         if self.env is None:
             endpoint = 'https://admin-api.dispatch.me/config/account_'
         else:
-            endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
-        r = requests.get(endpoint + entity + '/' + account_id, headers=headers)
-        r_raw = r.content
-        config_dict = json.loads(r_raw)
+            endpoint = 'https://admin-api{}.dispatch.me/config/account_{}/{}'.format(self.env, self.entity,
+                                                                                     self.account_id)
+        r = requests.get(endpoint, headers=headers)
+        config_dict = r.json()
+        # config_dict = json.loads(r_raw)
         if 'error' in config_dict and config_dict['error'] == 'Unauthorized':
             print("Invalid bearer token!")
             exit()
         else:
             return config_dict
 
-    def get_report(self, account_id, entity, admin_token):
+    def get_account_config_report(self):
         """
         :param entity:
         :param admin_token:
@@ -39,14 +47,14 @@ class GetConfig:
         """
 
         headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
-                   'Authorization': 'Bearer ' + admin_token}
+                   'Authorization': 'Bearer ' + self.admin_token}
         if self.env is None:
             endpoint = 'https://admin-api.dispatch.me/config/account_'
         else:
-            endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
-        r = requests.get(endpoint + entity + '/' + account_id + '?report=true', headers=headers)
-        r_raw = r.content
-        report_dict = json.loads(r_raw)
+            endpoint = 'https://admin-api{}.dispatch.me/config/account_{}/{}'.format(self.env, self.entity,
+                                                                                     self.account_id)
+        r = requests.get(endpoint + '?report=true', headers=headers)
+        report_dict = r.json()
         return report_dict
 
     def get_dictionary_value(self, dictionary, key):
@@ -86,13 +94,7 @@ class GetConfig:
 
         current_dictionary[last_key] = value
 
-
-class PostConfig:
-
-    def __init__(self, env=None):
-        self.env = env
-
-    def post_config(self, account_id, entity, admin_token, config_value=None):
+    def post_config_to_destination(self, config_value=None):
         """
         :param config_value:
         :param entity:
@@ -103,9 +105,10 @@ class PostConfig:
 
         config_dumps = json.dumps({"overwrite": False, "config": config_value}, indent=4, sort_keys=True)
         headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
-                   'Authorization': 'Bearer ' + admin_token}
-        endpoint = 'https://admin-api' + self.env + '.dispatch.me/config/account_'
-        post = requests.post(endpoint + entity + '/' + account_id, headers=headers, data=config_dumps)
+                   'Authorization': 'Bearer ' + self.admin_token}
+        endpoint = 'https://admin-api{}.dispatch.me/config/account_{}/{}'.format(self.env, self.entity, self.account_id)
+
+        post = requests.post(endpoint, headers=headers, data=config_dumps)
         # post_response=post.text
         if '{"error":"Unauthorized"}' in post.text:
             print("Invalid bearer token!")
@@ -114,72 +117,67 @@ class PostConfig:
             print(config_dumps + '\n')
             print(post.text + '\n')
 
-
-class Inputs:
-
-    def __init__(self):
-
-        pass
-
-    def environment(self):
+    def environment_input(self):
         """
         :return: takes environment input and validates against existing environments
         """
 
         while 1:
-            env = input('\nEnvironment:\n- Dev\n- Staging\n- Sandbox\n- Production \n(Choose environment): ').lower()
+            self.env = input(
+                '\nEnvironment:\n- Dev\n- Staging\n- Sandbox\n- Production \n(Choose environment): ').lower()
 
-            if env in ['dev', 'staging', 'sandbox', 'production']:
-                if env == 'production':
+            if self.env in ['dev', 'staging', 'sandbox', 'production']:
+                if self.env == 'production':
                     return None
                 else:
-                    return '-' + env
+                    self.env = '-' + self.env
+                    return self.env
 
             else:
                 print('\n Not a valid environment!')
                 continue
 
-    def bearer_token(self):
+    def admin_token_input(self):
         """
         :return: takes environment bearer_token
         """
-        bearer_token = input('\nEnter admin bearer token: ')
-        return bearer_token
+        self.admin_token = input('\nEnter admin bearer token: ')
+        return self.admin_token
 
-    def account(self):
+    def account_input(self):
         """
         :return: takes an account id and validate it is numerical
         """
         while 1:
-            account_id = input('Account ID: ')
+            self.account_id = input('Account ID: ')
 
-            if account_id.isdigit():
-                return account_id
+            if self.account_id.isdigit():
+                return self.account_id
 
             else:
                 print('\nNot a valid account ID!.')
                 continue
 
-    def entity(self):
+    def entity_input(self):
         """
         :return: takes entity role and validates it.
         """
 
         while 1:
-            entity_role = input('\n Account entity (dispatcher/technician/customer): ')
+            self.entity = input('\n Account entity (dispatcher/technician/customer): ')
 
-            if entity_role in ['dispatcher', 'technician', 'customer']:
-                return entity_role
+            if self.entity in ['dispatcher', 'technician', 'customer']:
+                return self.entity
 
             else:
                 print('\nNot a valid entity role!')
                 continue
 
-    def proceed(self, proceed, config_report, raw_config, config):
+    def check_inheritance(self, proceed=None, config_report=None, config=None):
         """
+        :param config_client:
         :param proceed:
         :param config_report:
-        :param raw_config:
         :param config:
         :return: checks if proceed = y and checks for inherited configs
         """
@@ -188,41 +186,38 @@ class Inputs:
             post_values = {}
             for item in config_report:
                 if not config_report[item]["inherited"]:
-                    config_value = raw_config.get_dictionary_value(config, item)
-                    raw_config.set_dictionary_value(post_values, item, config_value)
+                    config_value = self.get_dictionary_value(config, item)
+                    self.set_dictionary_value(post_values, item, config_value)
         else:
             print('\nOperation stopped\n')
         return post_values
 
 
 def main():
-    inputs = Inputs()
-    env1 = inputs.environment()
+    env_a = ConfigClient()
+    env_a.environment_input()
+    env_a.admin_token_input()
+    env_a.account_input()
+    env_a.entity_input()
+    config = env_a.get_account_config()
+    config_report = env_a.get_account_config_report()
+    print('\n\n***SOURCE CONFIGURATIONS SAVED IN MEMORY***')
 
-    bearer_token1 = inputs.bearer_token()
-    account_id1 = inputs.account()
-    entity1 = inputs.entity()
-    raw_config = GetConfig(env1)
-    config = raw_config.get(account_id1, entity1, bearer_token1)
+    env_b = ConfigClient()
+    env_b.environment_input()
+    env_b.admin_token_input()
+    env_b.account_input()
+    env_b.entity_input()
 
-    # config_json = json.dumps({"overwrite": False, "config": raw_config.get(account_id1, entity1, bearer_token1)},
-    #                          indent=4,
-    #                          sort_keys=True)
-    config_report = raw_config.get_report(account_id1, entity1, bearer_token1)
+    # process = ConfigClient()
+    proceed = input(
+        'Are you sure you want to copy the settings from {} to {}? (y/n) [ENTER=Abort]? '.format(env_a.env.upper(),
+                                                                                                 env_b.env.upper()))
 
-    print('\n\n***SETTINGS SAVED IN MEMORY***')
+    post_values = env_a.check_inheritance(proceed, config_report, config)
+    env_b.post_config_to_destination(post_values)
 
-    env2 = inputs.environment()
-    bearer_token2 = inputs.bearer_token()
-    account_id2 = inputs.account()
-    entity2 = inputs.entity()
-
-    proceed = input('Are you sure you want to copy the settings from %s to %s? (y/n) [ENTER=Abort]? ' % (
-        env1.upper(), env2.upper()))
-    post_values = inputs.proceed(proceed, config_report, raw_config, config)
-
-    post_config = PostConfig(env2)
-    post_config.post_config(account_id2, entity2, bearer_token2, post_values)
+    # print(post_values)
 
 
 if __name__ == '__main__':
