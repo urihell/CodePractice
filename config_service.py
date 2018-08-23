@@ -16,9 +16,6 @@ class ConfigClient:
 
     def get_account_config(self):
         """
-        :param entity:
-        :param admin_token:
-        :param account_id:
         :return: GET json payload of account configurations
         """
 
@@ -40,9 +37,6 @@ class ConfigClient:
 
     def get_account_config_report(self):
         """
-        :param entity:
-        :param admin_token:
-        :param account_id:
         :return: GET report json payload of all the account configurations
         """
 
@@ -97,9 +91,6 @@ class ConfigClient:
     def post_config_to_destination(self, config_value=None):
         """
         :param config_value:
-        :param entity:
-        :param admin_token:
-        :param account_id:
         :return: POST json payload of all the account configurations
         """
 
@@ -175,7 +166,6 @@ class ConfigClient:
 
     def check_inheritance(self, proceed=None, config_report=None, config=None):
         """
-        :param config_client:
         :param proceed:
         :param config_report:
         :param config:

@@ -6,7 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7a75f99-753f-4ca0-a1b3-0b7d9f8862e3" name="Default" comment="Added error handling for invalid bearer tokens">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJack.py" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_service.py" afterDir="false" />
@@ -79,12 +78,13 @@
     <session id="739616364">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -114,13 +114,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="52" />
-          <entry key="py" value="1162" />
+          <entry key="py" value="1240" />
+          <entry key="txt" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="52" />
-          <entry key="Python" value="1156" />
+          <entry key="PLAIN_TEXT" value="126" />
+          <entry key="Python" value="1234" />
           <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
@@ -131,11 +132,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+            <state relative-caret-position="439">
+              <caret line="190" column="24" lean-forward="true" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="24" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1534975793567" expanded="true" signature="284:518" ph="..." />
+                <marker date="1534993397344" expanded="true" signature="284:518" ph="..." />
               </folding>
             </state>
           </provider>
@@ -144,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="196" column="23" selection-start-line="196" selection-start-column="12" selection-end-line="196" selection-end-column="23" />
+            <state relative-caret-position="1665">
+              <caret line="112" column="76" selection-start-line="112" selection-start-column="76" selection-end-line="112" selection-end-column="76" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -205,6 +206,7 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -251,11 +253,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-198" />
-    <option name="y" value="-1670" />
-    <option name="width" value="1740" />
-    <option name="height" value="1511" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="22" />
+    <option name="width" value="1680" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,9 +264,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,11 +286,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Uriel/Documents/GitHub/CodePractice/front_back class.py" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534975906431" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534976152043" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -615,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534342414149</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Consolidated functions to a single class.&#10;Updated formatting.">
+      <created>1534976036252</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1534976036253</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -630,10 +638,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-198" y="-1670" width="1740" height="1511" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15371025" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16300367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -642,7 +650,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299462" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.36011276" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" weight="0.54594016" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.27266082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -682,7 +690,8 @@
     <MESSAGE value="Code improvements." />
     <MESSAGE value="Added production environment." />
     <MESSAGE value="Added error handling for invalid bearer tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added error handling for invalid bearer tokens" />
+    <MESSAGE value="Consolidated functions to a single class.&#10;Updated formatting." />
+    <option name="LAST_COMMIT_MESSAGE" value="Consolidated functions to a single class.&#10;Updated formatting." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.conda/envs/CodePractice/lib/python3.6/codecs.py" />
@@ -786,70 +795,18 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_12.py" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/72337cbe-fc18-4c5a-9300-f798c4974d3e/connector-agent-config-prod/0.0.1/account/34/csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="144" column="3" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="144" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/b301ab82-8cee-460b-bce6-ee2cfa689088/connector-agent-config-dev/0.0.1/account/23/csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="12" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="68" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962455000-dbe2e127-5c1c-5284-9cd9-b2d0f14bc3d2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-prod/0.0.1/batch/1.0.0/common/csv/1/account/34/job/1534927402000-59b976ce-b1c7-517c-bd3e-253995ad31b2">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962634000-1fb8456e-2f4b-5f1a-8519-169981415cc2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/136690">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146806">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962395000-fe079704-7242-504b-8a11-c4f3df59a377">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534963533000-80826ef7-f69b-5395-a2ea-3d004716d6b5">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146832">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146834">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534964209000-4584f12b-98ef-5cb0-b30b-a2dc2cdeb061">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/72337cbe-fc18-4c5a-9300-f798c4974d3e/connector-agent-config-prod/0.0.1/account/34/csv" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/b301ab82-8cee-460b-bce6-ee2cfa689088/connector-agent-config-dev/0.0.1/account/23/csv" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962455000-dbe2e127-5c1c-5284-9cd9-b2d0f14bc3d2" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-prod/0.0.1/batch/1.0.0/common/csv/1/account/34/job/1534927402000-59b976ce-b1c7-517c-bd3e-253995ad31b2" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962634000-1fb8456e-2f4b-5f1a-8519-169981415cc2" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/136690" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146806" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962395000-fe079704-7242-504b-8a11-c4f3df59a377" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534963533000-80826ef7-f69b-5395-a2ea-3d004716d6b5" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146832" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146834" />
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534964209000-4584f12b-98ef-5cb0-b30b-a2dc2cdeb061" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -857,13 +814,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/72337cbe-fc18-4c5a-9300-f798c4974d3e/connector-agent-config-sbx/0.0.1/account/63/csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/72337cbe-fc18-4c5a-9300-f798c4974d3e/connector-agent-config-sbx/0.0.1/account/63/csv" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/carrier_map_sandbox.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -871,31 +822,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tkinter_practice.py">
+    <entry file="file://$PROJECT_DIR$/config_service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="439">
+          <caret line="190" column="24" lean-forward="true" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1534993397344" expanded="true" signature="284:518" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="196" column="23" selection-start-line="196" selection-start-column="12" selection-end-line="196" selection-end-column="23" />
+        <state relative-caret-position="1665">
+          <caret line="112" column="76" selection-start-line="112" selection-start-column="76" selection-end-line="112" selection-end-column="76" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_service.py">
+    <entry file="file://$PROJECT_DIR$/Tkinter_practice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1534975793567" expanded="true" signature="284:518" ph="..." />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
