@@ -201,7 +201,7 @@ def main():
 
     # process = ConfigClient()
     proceed = input(
-        'Are you sure you want to copy the settings from {} to {}? (y/n) [ENTER=Abort]? '.format(env_a.env.upper(),
+        'Are you sure you want to copy the configurations from {} to {}? (y/n) [ENTER=Abort]? '.format(env_a.env.upper(),
                                                                                                  env_b.env.upper()))
 
     post_values = env_a.check_inheritance(proceed, config_report, config)
