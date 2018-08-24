@@ -182,6 +182,36 @@ class ConfigClient:
             print('\nOperation stopped\n')
         return post_values
 
+    def backup_destination_config(self):
+        headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
+                   'Authorization': 'Bearer ' + self.admin_token}
+        if self.env is None:
+            endpoint = 'https://admin-api.dispatch.me/config/account_'
+        else:
+            endpoint = 'https://admin-api{}.dispatch.me/config/account_{}/{}'.format(self.env, self.entity,
+                                                                                     self.account_id)
+        r = requests.get(endpoint, headers=headers)
+        config_dict = r.text
+        # config_dict = json.loads(r_raw)
+        with open('{}_config_backup.json'.format(self.env), 'w') as backup:
+            backup.write(config_dict)
+        print("Config backup created")
+
+    def backup_destination_config_report(self):
+        headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
+                   'Authorization': 'Bearer ' + self.admin_token}
+        if self.env is None:
+            endpoint = 'https://admin-api.dispatch.me/config/account_'
+        else:
+            endpoint = 'https://admin-api{}.dispatch.me/config/account_{}/{}'.format(self.env, self.entity,
+                                                                                     self.account_id)
+        r = requests.get(endpoint + '?report=true', headers=headers)
+        report_dict = r.text
+        with open('{}_config_backup_report.json'.format(self.env), 'w') as backup:
+            backup.write(report_dict)
+        print("Config report backup created")
+
+
 
 def main():
     env_a = ConfigClient()
@@ -203,7 +233,8 @@ def main():
     proceed = input(
         'Are you sure you want to copy the configurations from {} to {}? (y/n) [ENTER=Abort]? '.format(env_a.env.upper(),
                                                                                                  env_b.env.upper()))
-
+    env_b.backup_destination_config()
+    env_a.backup_destination_config_report()
     post_values = env_a.check_inheritance(proceed, config_report, config)
     env_b.post_config_to_destination(post_values)
 
