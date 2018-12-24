@@ -14,6 +14,7 @@ class ConfigClient:
         return 'Environment: {}\nAdmin token: {}\nAccount ID: {}\nEntity: {}'.format(self.env, self.admin_token,
                                                                                      self.account_id, self.entity)
 
+# Retrieve account configurations
     def get_account_config(self):
         """
         :return: GET json payload of account configurations
@@ -35,6 +36,7 @@ class ConfigClient:
         else:
             return config_dict
 
+# Retrieve a report of account configurations (with inherited flag)
     def get_account_config_report(self):
         """
         :return: GET report json payload of all the account configurations
@@ -51,6 +53,7 @@ class ConfigClient:
         report_dict = r.json()
         return report_dict
 
+# Put values returned
     def get_dictionary_value(self, dictionary, key):
         """
         :param dictionary:
