@@ -6,8 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7a75f99-753f-4ca0-a1b3-0b7d9f8862e3" name="Default" comment="Added error handling for invalid bearer tokens">
-      <change afterPath="$PROJECT_DIR$/xref_csv_merge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xref_csv_merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/xref_csv_merge.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xref_csv_merge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-363">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="60" />
+            <state relative-caret-position="60">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -33,17 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/download_s3_bucket.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_20.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -85,6 +76,7 @@
       <find>“</find>
       <find>reports</find>
       <find>##</find>
+      <find>mkdir</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -151,9 +143,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_16.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_17.py" />
         <option value="$PROJECT_DIR$/s3_merge_to_csv.py" />
-        <option value="$PROJECT_DIR$/xref_csv_merge.py" />
-        <option value="$PROJECT_DIR$/download_s3_bucket.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_20.py" />
+        <option value="$PROJECT_DIR$/download_s3_bucket.py" />
+        <option value="$PROJECT_DIR$/xref_csv_merge.py" />
       </list>
     </option>
   </component>
@@ -189,7 +181,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Uriel/Documents/GitHub/CodePractice/front_back class.py" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547506456987" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547576841970" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -217,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scratch_20">
+  <component name="RunManager" selected="Python.download_s3_bucket">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -353,9 +345,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scratch_20" />
         <item itemvalue="Python.download_s3_bucket" />
         <item itemvalue="Python.s3_merge_to_csv" />
+        <item itemvalue="Python.scratch_20" />
         <item itemvalue="Python.scratch_17" />
         <item itemvalue="Python.scratch_16" />
       </list>
@@ -561,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545674973803</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added error handling for invalid bearer tokens">
+      <created>1547506493025</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1547506493025</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -636,14 +635,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/xref_csv_merge.py</url>
-          <line>106</line>
-          <option name="timeStamp" value="10" />
+          <url>file:///anaconda3/lib/python3.6/site-packages/s3transfer/utils.py</url>
+          <line>255</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/xref_csv_merge.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="13" />
+          <line>137</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -656,16 +655,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_12.py" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/72337cbe-fc18-4c5a-9300-f798c4974d3e/connector-agent-config-prod/0.0.1/account/34/csv" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/b301ab82-8cee-460b-bce6-ee2cfa689088/connector-agent-config-dev/0.0.1/account/23/csv" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962455000-dbe2e127-5c1c-5284-9cd9-b2d0f14bc3d2" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-prod/0.0.1/batch/1.0.0/common/csv/1/account/34/job/1534927402000-59b976ce-b1c7-517c-bd3e-253995ad31b2" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962634000-1fb8456e-2f4b-5f1a-8519-169981415cc2" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/136690" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146806" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534962395000-fe079704-7242-504b-8a11-c4f3df59a377" />
-    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534963533000-80826ef7-f69b-5395-a2ea-3d004716d6b5" />
     <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146832" />
     <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/146834" />
     <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/245eaa91-6dde-4494-bcf3-0a1e6ffd19d9/connector-hub-out-sbx/0.0.1/batch/1.0.0/common/csv/1/account/63/job/1534964209000-4584f12b-98ef-5cb0-b30b-a2dc2cdeb061" />
@@ -877,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///anaconda3/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/xref_csv_merge.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -898,10 +880,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/boto3/resources/factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="473" selection-start-line="473" selection-end-line="473" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/b301ab82-8cee-460b-bce6-ee2cfa689088/connector-hub-xref-dev/xref/in/account/474/job/uriel-016">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/s3transfer/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/s3transfer/download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="611" selection-start-line="611" selection-end-line="611" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/s3transfer/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/concurrent/futures/thread.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="863" selection-start-line="863" selection-end-line="863" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="372" selection-start-line="372" selection-end-line="372" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/b301ab82-8cee-460b-bce6-ee2cfa689088/connector-hub-xref-dev/xref/in/account/474/job/uriel-058New 29">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///private/var/folders/xf/3ysr98dn1jl76r4vy27s3r4m0000gp/T/b301ab82-8cee-460b-bce6-ee2cfa689088/connector-hub-xref-dev/xref/out/account/474/job/32563">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/xref_csv_merge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-363">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
@@ -910,8 +961,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/download_s3_bucket.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+        <state relative-caret-position="120">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>

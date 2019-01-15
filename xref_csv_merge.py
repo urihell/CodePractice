@@ -2,7 +2,7 @@ import boto3
 from botocore.exceptions import ClientError
 import os
 import pandas as pd
-
+import json
 
 class Xrefmerge:
 
@@ -51,21 +51,23 @@ class Xrefmerge:
                     os.remove(hidden_path)
                     print("Hidden File Removed!\n")
 
-    def s3_to_csv(self):
+    def download_s3_files(self):
         # Downloads bucket files to the destination path
-        self.remove_hidden_files()
         s3 = boto3.resource('s3')
         bucket = s3.Bucket(self.bucket_name)
         files = (bucket.objects.filter(Prefix=self.prefix))
         for obj in files:
             try:
                 print('Downloading %s\n' % obj.key)
+                # os.mkdir('%s%s' % (self.dest_path, os.path.basename(obj.key)))
                 s3.Bucket(self.bucket_name).download_file(obj.key, os.path.basename(obj.key))
                 print('Done\n')
             except ClientError as e:
                 raise
-        self.remove_hidden_files()
+
+    def create_xref_files(self):
         # Read /Documents/tmp/ folder and write to a CSV file
+        self.remove_hidden_files()
         print('Reading XREF files and Writing to a CSV file\n')
         xref_list = []
         for file in os.listdir(self.dest_path):
@@ -104,35 +106,42 @@ class Xrefmerge:
     def new_xref_files(self):
         self.remove_hidden_files()
         print('Writing Files to %sNEW_XREF_FILES' % self.dest_path)
-        df1 = pd.read_csv(self.merged_csv)
+        df3 = pd.read_csv(self.merged_csv)
         try:
             os.chdir('%sNEW_XREF_FILES' % self.dest_path)
         except:
             os.mkdir('%sNEW_XREF_FILES' % self.dest_path)
             os.chdir('%sNEW_XREF_FILES' % self.dest_path)
         try:
-            for index, row in df1.iterrows():
+            for index, row in df3.iterrows():
                 if '/in/' in self.prefix:
                     with open(row[self.header3], 'w') as xref_file:
                         xref_file.write(str(row[self.header2]))
                 elif '/out/' in self.prefix:
-                    with open(row[self.header2], 'w') as xref_file:
-                        xref_file.write(str(row[self.header3]))
+                    with open(str(row[self.header2]), 'w') as xref_file:
+                        external_ids = json.dumps([row[self.header3], row[self.header1]])
+
+                        xref_file.write(str(external_ids))
         except:
-            print('Unable To Write Files in %sNEW_XREF_FILES' % self.dest_path)
+            # print('Unable To Write Files in %sNEW_XREF_FILES' % self.dest_path)
+            raise
 
     def upload_to_s3(self):
         # try:
+        self.remove_hidden_files()
         print("Uploading Files to s3://%s/%s" % (self.bucket_name, self.prefix))
         os.chdir('%s/NEW_XREF_FILES' % self.dest_path)
         folder = os.getcwd()
-        transfer = boto3.client('s3')
-        for root, dirs, files in os.walk(folder, topdown=False):
-            for name in files:
-                if not name.startswith('.'):
-                    transfer.upload_file(name, self.bucket_name, self.prefix)
-        # except:
-        print("Unable to Upload Files to s3://%s/%s" % (self.bucket_name, self.prefix))
+        s3 = boto3.resource('s3')
+        bucket = s3.Bucket(self.bucket_name)
+        try:
+            for root, dirs, files in os.walk(folder, topdown=False):
+                for name in files:
+                    if not name.startswith('.'):
+                        print('%s\n' % name)
+                        bucket.upload_file(name, self.prefix + name)
+        except:
+            print("Unable to Upload Files to s3://%s/%s" % (self.bucket_name, self.prefix))
 
 
 def main():
