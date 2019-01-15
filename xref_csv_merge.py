@@ -4,6 +4,7 @@ import os
 import pandas as pd
 import json
 
+
 class Xrefmerge:
 
     def __init__(self, bucket_name='connector-hub-xref-dev', prefix='xref/in/account/474/job/',
@@ -145,11 +146,17 @@ class Xrefmerge:
 
 
 def main():
-    s3merge = Xrefmerge()
+    s3merge = Xrefmerge(prefix='xref/in/account/474/organization/')
     s3merge.update_local_dir()
     s3merge.remove_hidden_files()
-    s3merge.s3_to_csv()
+    s3merge.update_local_dir()
+    s3merge.download_s3_files()
+    s3merge.create_xref_files()
     s3merge.merge_csv()
+#
+    s3merge.new_xref_files()
+    s3merge.upload_to_s3()
+
 
 
 if __name__ == '__main__':
