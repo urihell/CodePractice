@@ -3,6 +3,13 @@ from botocore.exceptions import ClientError
 import os
 import pandas as pd
 import json
+from tqdm import tqdm
+
+
+def hook(t):
+    def inner(bytes_amount):
+        t.update(bytes_amount)
+    return inner
 
 
 class Xrefmerge:
@@ -43,28 +50,28 @@ class Xrefmerge:
 
     def remove_hidden_files(self):
         # Checks for hidden files and remove if exists
-        print('Locating Hidden Files...\n')
         for root, dirs, files in os.walk(self.dest_path, topdown=False):
             for name in files:
                 if name.startswith('.'):
                     hidden_path = os.path.join(root, name)
-                    print("Hidden File Located at:\n%s" % hidden_path)
                     os.remove(hidden_path)
-                    print("Hidden File Removed!\n")
+                    print("Hidden File %s Removed!\n" % name)
 
     def download_s3_files(self):
         # Downloads bucket files to the destination path
+        print('Downloading files from %s/%s...\n' % (self.bucket_name, self.prefix))
         s3 = boto3.resource('s3')
         bucket = s3.Bucket(self.bucket_name)
-        files = (bucket.objects.filter(Prefix=self.prefix))
+        files = bucket.objects.filter(Prefix=self.prefix)
         for obj in files:
             try:
-                print('Downloading %s\n' % obj.key)
-                # os.mkdir('%s%s' % (self.dest_path, os.path.basename(obj.key)))
-                s3.Bucket(self.bucket_name).download_file(obj.key, os.path.basename(obj.key))
-                print('Done\n')
+                object = s3.Object(self.bucket_name, obj.key)
+                obj_size = object.content_length
+                with tqdm(total=obj_size, unit='B', unit_scale=True, desc=obj.key) as t:
+                    s3.Bucket(self.bucket_name).download_file(obj.key, os.path.basename(obj.key), Callback=hook(t))
             except ClientError as e:
                 raise
+
 
     def create_xref_files(self):
         # Read /Documents/tmp/ folder and write to a CSV file
@@ -123,14 +130,15 @@ class Xrefmerge:
                         external_ids = json.dumps([row[self.header3], row[self.header1]])
 
                         xref_file.write(str(external_ids))
+            print("Files Uploaded Successfully to %s/%s\n" % (self.bucket_name, self.prefix))
         except:
-            # print('Unable To Write Files in %sNEW_XREF_FILES' % self.dest_path)
+            print('Unable To Write Files in %sNEW_XREF_FILES' % self.dest_path)
             raise
 
     def upload_to_s3(self):
         # try:
         self.remove_hidden_files()
-        print("Uploading Files to s3://%s/%s" % (self.bucket_name, self.prefix))
+        print("Uploading Files to s3://%s/%s..." % (self.bucket_name, self.prefix))
         os.chdir('%s/NEW_XREF_FILES' % self.dest_path)
         folder = os.getcwd()
         s3 = boto3.resource('s3')
@@ -139,8 +147,9 @@ class Xrefmerge:
             for root, dirs, files in os.walk(folder, topdown=False):
                 for name in files:
                     if not name.startswith('.'):
-                        print('%s\n' % name)
-                        bucket.upload_file(name, self.prefix + name)
+                        file_size = os.path.getsize(name)
+                        with tqdm(total=file_size, unit_scale=True, desc='Uploading ' + name) as t:
+                            bucket.upload_file(name, self.prefix + name, Callback=hook(t))
         except:
             print("Unable to Upload Files to s3://%s/%s" % (self.bucket_name, self.prefix))
 
@@ -153,10 +162,9 @@ def main():
     s3merge.download_s3_files()
     s3merge.create_xref_files()
     s3merge.merge_csv()
-#
+    #
     s3merge.new_xref_files()
     s3merge.upload_to_s3()
-
 
 
 if __name__ == '__main__':
