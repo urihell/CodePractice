@@ -1,0 +1,2884 @@
+{
+    "app.acceptTitle": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "Accept"
+    },
+    "app.canAddAJob": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canAddBillingItems": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canAddEstimate": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canAddInvoice": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canAddLineItem": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canAddPayment": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canDeleteBillingDocuments": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canDeleteBillingItems": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canDeleteLineItem": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canEditBillingItems": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canEditProfile": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canPauseAvailability": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canRescheduleJobs": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSaveLineItemForFuture": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeBilling": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeBillingDocumentNumber": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeBillingSettings": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeBrandedEmails": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeCantContactCustomer": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.canSeeContracts": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeCustomerEdit": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.canSeeCustomerPortalAttachmentDescriptionField": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeCustomerPortalAttachmentManufacturerField": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeCustomerPortalAttachmentModelField": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeCustomerPortalAttachmentUpload": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeDesktopSettings": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeIssueDate": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeNotes": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeePONumber": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeePaymentTerms": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeQuickbooks": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.canSeeRequestCallBack": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.canSeeResetToScheduled": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.canSeeServiceInstructions": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.canSeeStartDate": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeTaxes": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSeeWorkBilling": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSelectMultiple": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSendByEmail": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.canSetAvailability": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.cancelReasons": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": [
+            "customer_cancelled|Customer Cancelled|false|canceled",
+            "issues_resolved_without_service_visit|Issues Resolved Without Service Visit|false|canceled",
+            "decided_against_repair_without_service_visit|Decided Against Repair Without Service Visit|false|canceled"
+        ]
+    },
+    "app.completeReasons": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": [
+            "service_provided|Service Provided|false|complete",
+            "unrepairable|Unrepairable|false|complete",
+            "declined_service|Declined Service|false|complete",
+            "referred_out|Referred Out|false|complete",
+            "waiting_on_parts|Waiting on Parts|false|paused",
+            "follow_up_with_customer|Follow Up Required|false|paused",
+            "no_show|Customer Not Home|false|paused",
+            "additional_tools_or_labor|Additional Tools or Labor|false|paused",
+            "cannot_contact_customer|Cannot Contact Customer|false|paused"
+        ]
+    },
+    "app.customForms": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": [
+            "equipment:Equipment|make:Make|model:Model|serialNumber:Serial Number|age:Age (Years)|diagnosis:Diagnosis"
+        ]
+    },
+    "app.declineTitle": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "Decline"
+    },
+    "app.hideAddressUntilAccepted": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.hideCustomerIfCanceled": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.hideCustomerUntilDayOf": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.hideCustomerUntilScheduled": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.hideFilterTechnicians": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.hideJobDetailsUntilAccepted": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.integrations": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": [
+            "American Home Shield|https://files-api-dev.dispatch.me/v1/datafiles/0e3601b9-5a4b-4692-b82d-502f61107876/proportional_250|Learn More|AHS",
+            "Test New Source|https://img-dispatch.s3.amazonaws.com/guides/magnify.png|Learn More|mkt-newsource|Job Sources",
+            "Wintac|https://img-dispatch.s3.amazonaws.com/marketplace/wintac.jpg|Coming Soon|mkt-wintac|Connections",
+            "HomeAdvisor|https://img-dispatch.s3.amazonaws.com/marketplace/homeadvisor.jpg|Learn More|mkt-homeadvisor|Job Sources",
+            "Networx|https://img-dispatch.s3.amazonaws.com/marketplace/networx.png|Learn More|mkt-networx|Job Sources",
+            "Customer Booking Page|https://img-dispatch.s3.amazonaws.com/marketplace/bookingpage.png|Get My Link|mkt-bookingpage|Job Sources"
+        ]
+    },
+    "app.jobTrackerCanReschedule": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.jobTrackerCanSelectMultipleRatingReasons": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.jobTrackerRatingReasons": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": [
+            "Technician Service",
+            "Timeliness",
+            "Price",
+            "Quality"
+        ]
+    },
+    "app.jobTrackerRequireAdditionalComments": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.jobTrackerShowRatingReasons": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.mustMatchBillingItemList": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.privateNotes": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.rejectReasons": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": [
+            "Area Not Covered",
+            "Cannot Complete Job",
+            "No Capacity",
+            "Other (Call Sub Zero call center)"
+        ]
+    },
+    "app.reports": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": [
+            "94723|Your Jobs|daterange",
+            "94678|Your Reviews|daterange",
+            "94711|Your Technicians|daterange",
+            "101123|Your Billing|daterange"
+        ]
+    },
+    "app.showDeclineButton": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.showPrivateNotesToggle": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.showSuggestedTimes": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "app.showWarrantyRating": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": false
+    },
+    "app.useAppointmentWindows": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": true
+    },
+    "notifications.email.events.appointment__assigned.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__assigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__assigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__assigned.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__canceled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__canceled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__complete.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__complete.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__complete.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__complete.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__complete.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__created.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__draft.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__draft.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__draft.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__draft.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__draft.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__enroute.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__enroute.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__enroute.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__enroute.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__enroute.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__notify_rescheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__notify_rescheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__notify_rescheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__reassigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__reassigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__reassigned.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__rescheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__rescheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__rescheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__rescheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__rescheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__scheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__scheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__scheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__scheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__scheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__started.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__started.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__started.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__started.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.appointment__started.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.appointment__unassigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__unassigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.appointment__unassigned.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__canceled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__canceled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__closed.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__closed.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__closed.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__closed.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__closed.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__complete.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__complete.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__complete.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__complete.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__complete.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__created.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "[Aggregator2] Job Created to Dispatcher"
+    },
+    "notifications.email.events.job__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.email.events.job__created_by_account.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__created_by_account.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__created_by_account.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__draft.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__draft.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__draft.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__draft.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__draft.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__message_replied.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "sms-reply-notification"
+    },
+    "notifications.email.events.job__message_replied.templates.subject": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "{{customer.full_name}} Sent you a Message in Dispatch.me"
+    },
+    "notifications.email.events.job__message_replied.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.email.events.job__notify_organization.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "[Aggregator] External event email"
+    },
+    "notifications.email.events.job__notify_organization.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.email.events.job__paused.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__paused.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__paused.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__paused.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__paused.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__rejected.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__rejected.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__rejected.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__rejected.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__rejected.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__scheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__scheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__scheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__scheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__scheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job__unscheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__unscheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job__unscheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__unscheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.job__unscheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__accepted.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__accepted.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__accepted.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__entity_accepted.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_accepted.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_accepted.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__entity_canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__entity_expired.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_expired.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_expired.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__entity_offered.condition": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "data.organization.usage_mode !== 'ghost'"
+    },
+    "notifications.email.events.job_offer__entity_offered.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "[Aggregator] New Job Offer (AWE)"
+    },
+    "notifications.email.events.job_offer__entity_offered.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_offered.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__entity_rejected.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_rejected.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_rejected.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__entity_reoffer.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_reoffer.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__entity_reoffer.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__expired.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__expired.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__expired.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__notify_organization.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "[Aggregator] External event email"
+    },
+    "notifications.email.events.job_offer__notify_organization.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.email.events.job_offer__offered.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__offered.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__offered.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.job_offer__rejected.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__rejected.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.job_offer__rejected.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.organization__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.organization__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.organization__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.organization__inbox_replied.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__inbox_replied.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__inbox_replied.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__inbox_replied.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__message_received.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "customer-message-notification-to-dispatcher"
+    },
+    "notifications.email.events.organization__message_received.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.email.events.organization__setup_complete.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__setup_complete.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.organization__setup_complete.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.organization__setup_complete.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.organization__setup_complete.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.payment__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.payment__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.payment__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.survey_response__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.survey_response__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.survey_response__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.survey_response__send.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__send.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__send.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.survey_response__submitted.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__submitted.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__submitted.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.survey_response__submitted.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.survey_response__submitted.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.survey_response__updated.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__updated.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.survey_response__updated.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.survey_response__updated.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.email.events.survey_response__updated.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.email.events.user__created.condition": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "data.organization.usage_mode !== 'ghost'"
+    },
+    "notifications.email.events.user__created.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "[Default] A new account was made for you on Dispatch"
+    },
+    "notifications.email.events.user__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.user__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.email.events.user__email_password_reset.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.user__email_password_reset.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "reset-password"
+    },
+    "notifications.email.events.user__email_password_reset.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.email.events.user__email_password_reset.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.push.events.appointment__assigned.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.push.events.appointment__assigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.push.events.appointment__assigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.push.events.appointment__assigned.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.push.events.user__created.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.push.events.user__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.push.events.user__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.push.events.user__created.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__assigned.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__assigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__assigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__assigned.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__created.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.appointment__created.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.organization__inbox_replied.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.organization__inbox_replied.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.organization__inbox_replied.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.organization__inbox_replied.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__created.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__created.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__email_password_reset.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__email_password_reset.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__email_password_reset.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.robocall.events.user__email_password_reset.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__assigned.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__assigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__assigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__assigned.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__canceled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__canceled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__complete.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__complete.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__complete.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__complete.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__complete.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__created.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__draft.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__draft.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__draft.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__draft.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__draft.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__enroute.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__enroute.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__enroute.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__enroute.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__enroute.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__notify_rescheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__notify_rescheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__notify_rescheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__reassigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__reassigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__reassigned.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__rescheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__rescheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__rescheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__rescheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__rescheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__scheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__scheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__scheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__scheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__scheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__started.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__started.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__started.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__started.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.appointment__started.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.appointment__unassigned.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__unassigned.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.appointment__unassigned.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__canceled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__canceled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__closed.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__closed.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__closed.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__closed.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__closed.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__complete.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__complete.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__complete.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__complete.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__complete.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__created_by_account.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__created_by_account.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__created_by_account.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__draft.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__draft.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__draft.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__draft.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__draft.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__message_replied.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "Message Replied"
+    },
+    "notifications.sms.events.job__message_replied.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.sms.events.job__notify_organization.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "{{eventData.text}}"
+    },
+    "notifications.sms.events.job__notify_organization.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.sms.events.job__paused.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__paused.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__paused.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__paused.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__paused.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__rejected.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__rejected.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__rejected.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__rejected.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__rejected.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__scheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__scheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__scheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__scheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__scheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job__unscheduled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__unscheduled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job__unscheduled.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__unscheduled.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.job__unscheduled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__accepted.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__accepted.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__accepted.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__entity_accepted.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_accepted.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_accepted.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__entity_canceled.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_canceled.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_canceled.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__entity_expired.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_expired.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_expired.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__entity_offered.condition": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "data.organization.usage_mode !== 'ghost'"
+    },
+    "notifications.sms.events.job_offer__entity_offered.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "You have a new job offer from {{account.title}}. Open the Dispatch app to view the job details."
+    },
+    "notifications.sms.events.job_offer__entity_offered.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_offered.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__entity_rejected.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_rejected.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_rejected.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__entity_reoffer.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_reoffer.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__entity_reoffer.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__expired.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__expired.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__expired.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__notify_organization.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "{{eventData.text}}"
+    },
+    "notifications.sms.events.job_offer__notify_organization.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.sms.events.job_offer__offered.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__offered.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__offered.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.job_offer__rejected.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__rejected.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.job_offer__rejected.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.organization__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.organization__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.organization__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.organization__inbox_replied.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__inbox_replied.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__inbox_replied.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__inbox_replied.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__setup_complete.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__setup_complete.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.organization__setup_complete.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.organization__setup_complete.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.organization__setup_complete.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.payment__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.payment__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.payment__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.survey_response__created.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__created.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.survey_response__created.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.survey_response__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.survey_response__send.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__send.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__send.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.survey_response__submitted.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__submitted.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__submitted.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.survey_response__submitted.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.survey_response__submitted.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.survey_response__updated.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__updated.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.survey_response__updated.timing.delay": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.survey_response__updated.timing.timeout": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": 0
+    },
+    "notifications.sms.events.survey_response__updated.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "never"
+    },
+    "notifications.sms.events.user__created.condition": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "data.organization.usage_mode !== 'ghost' && data.organization.signup_source !== null"
+    },
+    "notifications.sms.events.user__created.templates.body": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "Welcome to Dispatch! To install the app, go to {{urls.get}} from your mobile device."
+    },
+    "notifications.sms.events.user__created.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.user__created.when": {
+        "entityId": "112",
+        "entityType": "account_dispatcher",
+        "inherited": false,
+        "value": "always"
+    },
+    "notifications.sms.events.user__email_password_reset.condition": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.user__email_password_reset.templates.body": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.user__email_password_reset.templates.subject": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.sms.events.user__email_password_reset.when": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": null
+    },
+    "notifications.webhook": {
+        "entityId": "",
+        "entityType": "default",
+        "inherited": true,
+        "value": []
+    }
+}
