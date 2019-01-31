@@ -4,17 +4,22 @@ from config_service import ConfigClient
 import csv
 import os
 
+# Update to current directory
 os.chdir(os.getcwd())
-# os.chdir('/Users/urieldabby/Downloads/')
+
+# Call ConfigClient class
 cc = ConfigClient()
 
+# Collect input to retrieve config
 cc.environment_input()
 cc.admin_token_input()
 cc.account_input()
 cc.entity_input()
-report = cc.get_account_config_report()
-print(report)
 
+# Retrieve config report
+report = cc.get_account_config_report()
+
+# Export config report to a csv file
 with open('config_report.csv', 'w') as cr:
     writer = csv.writer(cr)
     print('\nCreating config_report.csv...\n')
