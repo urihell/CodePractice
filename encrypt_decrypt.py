@@ -1,4 +1,4 @@
-#!/usr/bin/env/ python
+#!/usr/bin/env/ python3
 
 import pyAesCrypt
 import os
@@ -22,7 +22,7 @@ def encrypt(filename):
 
 def decrypt(filename):
     # encryption/decryption buffer size - 64K
-    bufferSize = 64 * 1024
+    bufferSize = 256 * 1024
     password = getpass()
     try:
         # decrypt
