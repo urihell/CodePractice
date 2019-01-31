@@ -5,8 +5,8 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7a75f99-753f-4ca0-a1b3-0b7d9f8862e3" name="Default" comment="Updated main() function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c7a75f99-753f-4ca0-a1b3-0b7d9f8862e3" name="Default" comment="Updated shebang">
+      <change beforePath="$PROJECT_DIR$/config_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/encrypt_decrypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/encrypt_decrypt.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,23 +30,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/encrypt_decrypt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="318">
+              <caret line="49" column="21" lean-forward="true" selection-start-line="34" selection-end-line="49" selection-end-column="21" />
+              <folding>
+                <element signature="e#23#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3435">
-              <caret line="230" column="29" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
+            <state relative-caret-position="225">
+              <caret line="229" selection-start-line="229" selection-end-line="229" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1548847333169" expanded="true" signature="284:552" ph="..." />
+                <marker date="1548893637583" expanded="true" signature="300:568" ph="..." />
               </folding>
             </state>
           </provider>
@@ -191,9 +194,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_27.py" />
         <option value="$PROJECT_DIR$/download_s3_bucket.py" />
         <option value="$PROJECT_DIR$/xref_csv_merge.py" />
-        <option value="$PROJECT_DIR$/config_service.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_34.py" />
         <option value="$PROJECT_DIR$/encrypt_decrypt.py" />
+        <option value="$PROJECT_DIR$/config_service.py" />
       </list>
     </option>
   </component>
@@ -229,7 +232,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Uriel/Documents/GitHub/CodePractice/front_back class.py" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548847920281" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548893640439" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -257,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scratch_34">
+  <component name="RunManager" selected="Python.config_service">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -393,8 +396,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scratch_34" />
         <item itemvalue="Python.config_service" />
+        <item itemvalue="Python.scratch_34" />
         <item itemvalue="Python.download_s3_bucket" />
         <item itemvalue="Python.scratch_27" />
         <item itemvalue="Python.scratch_26" />
@@ -629,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548737909818</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Updated shebang">
+      <created>1548892879663</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1548892879663</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -655,7 +665,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299462" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" weight="0.4973262" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.4973262" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.4395722" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -699,7 +709,8 @@
     <MESSAGE value="Added error handling for invalid bearer tokens" />
     <MESSAGE value="Updated functions" />
     <MESSAGE value="Updated main() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated main() function" />
+    <MESSAGE value="Updated shebang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated shebang" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,6 +719,11 @@
           <url>file:///anaconda3/lib/python3.6/site-packages/s3transfer/utils.py</url>
           <line>255</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/encrypt_decrypt.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -720,13 +736,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Caches/IdeaIC2018.2/python_stubs/1978755681/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="811" column="8" selection-start-line="811" selection-start-column="8" selection-end-line="811" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/tkinter_config_service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3375">
@@ -1039,17 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3435">
-          <caret line="230" column="29" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1548847333169" expanded="true" signature="284:552" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_26.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1077,10 +1075,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/pyAesCrypt/crypto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/encrypt_decrypt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="318">
+          <caret line="49" column="21" lean-forward="true" selection-start-line="34" selection-end-line="49" selection-end-column="21" />
+          <folding>
+            <element signature="e#23#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1548893637583" expanded="true" signature="300:568" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

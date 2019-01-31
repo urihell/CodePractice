@@ -9,8 +9,8 @@ import argparse
 
 
 def encrypt(filename):
-    # encryption/decryption buffer size - 64K
-    bufferSize = 64 * 1024
+    # encryption/decryption buffer size - 256K
+    bufferSize = 256 * 1024
     password = getpass()
     # encrypt
     pyAesCrypt.encryptFile(filename, "%s.aes" % filename, password, bufferSize)
