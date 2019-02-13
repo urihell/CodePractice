@@ -4,11 +4,13 @@ import os
 import pandas as pd
 import json
 from tqdm import tqdm
+import argparse
 
 
 def hook(t):
     def inner(bytes_amount):
         t.update(bytes_amount)
+
     return inner
 
 
@@ -72,7 +74,6 @@ class Xrefmerge:
             except ClientError as e:
                 raise
 
-
     def create_xref_files(self):
         # Read /Documents/tmp/ folder and write to a CSV file
         self.remove_hidden_files()
@@ -130,19 +131,20 @@ class Xrefmerge:
                         external_ids = json.dumps([row[self.header3], row[self.header1]])
 
                         xref_file.write(str(external_ids))
-            print("Files Uploaded Successfully to %s/%s\n" % (self.bucket_name, self.prefix))
+            print("Files Written Successfully to %sNEW_XREF_FILES\n" % (self.dest_path))
         except:
             print('Unable To Write Files in %sNEW_XREF_FILES' % self.dest_path)
             raise
 
     def upload_to_s3(self):
         # try:
-        self.remove_hidden_files()
         print("Uploading Files to s3://%s/%s..." % (self.bucket_name, self.prefix))
         os.chdir('%s/NEW_XREF_FILES' % self.dest_path)
+        self.remove_hidden_files()
         folder = os.getcwd()
         s3 = boto3.resource('s3')
         bucket = s3.Bucket(self.bucket_name)
+
         try:
             for root, dirs, files in os.walk(folder, topdown=False):
                 for name in files:
@@ -150,19 +152,18 @@ class Xrefmerge:
                         file_size = os.path.getsize(name)
                         with tqdm(total=file_size, unit_scale=True, desc='Uploading ' + name) as t:
                             bucket.upload_file(name, self.prefix + name, Callback=hook(t))
+                print("\nNew XREF Files uploaded successfully to s3://%s/%s\n" % (self.bucket_name, self.prefix))
         except:
             print("Unable to Upload Files to s3://%s/%s" % (self.bucket_name, self.prefix))
 
 
 def main():
-    s3merge = Xrefmerge(prefix='xref/in/account/474/organization/')
+    s3merge = Xrefmerge()
     s3merge.update_local_dir()
     s3merge.remove_hidden_files()
-    s3merge.update_local_dir()
     s3merge.download_s3_files()
     s3merge.create_xref_files()
     s3merge.merge_csv()
-    #
     s3merge.new_xref_files()
     s3merge.upload_to_s3()
 
