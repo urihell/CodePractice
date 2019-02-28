@@ -1,0 +1,11 @@
+<h1><b>Organizations</b></h1>
+
+{% if org_list %}
+<ul>
+    {% for org in org_list %}
+    <li><a href="/crm/organizations/{{ org.id }}/">{{ org.name }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No organizations are available.</p>
+{% endif %}
