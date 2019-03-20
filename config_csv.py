@@ -5,10 +5,12 @@ import csv
 def extract_app_config(full_data):
 
     data = full_data
-    parsed_data = json.loads(data)
+    print(data)
+    parsed_data = data #json.loads(data)
     app_data = parsed_data['app']
+    notifications_data = parsed_data['notifications']
 
-    with open('AppConfig.csv', mode='w') as csv_file:
+    with open('/Users/urieldabby/Downloads/AppConfig.csv', mode='w') as csv_file:
         fieldnames = ['Configuration', 'Value']
         writer = csv.writer(csv_file)
         writer.writerow(fieldnames)
@@ -23,6 +25,7 @@ def get_config():
     env_a.account_input()
     env_a.entity_input()
     config = env_a.get_account_config()
+    return config
 
 
 
@@ -1125,7 +1128,8 @@ def get_config():
 #     return full_data
 
 def main():
-    full_data = string()
+    full_data = get_config()
+    # print(full_data)
     extract_app_config(full_data)
 
 main()

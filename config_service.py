@@ -23,7 +23,8 @@ class ConfigClient:
         headers = {'Content-Type': 'application/json', 'Cache-Control': 'no-cache',
                    'Authorization': 'Bearer ' + self.admin_token}
         if self.env is None:
-            endpoint = 'https://admin-api.dispatch.me/config/account_'
+            endpoint = 'https://admin-api.dispatch.me/config/account_{}/{}'.format(self.entity,
+                                                                                   self.account_id)
         else:
             endpoint = 'https://admin-api{}.dispatch.me/config/account_{}/{}'.format(self.env, self.entity,
                                                                                      self.account_id)
@@ -122,7 +123,8 @@ class ConfigClient:
 
             if self.env in ['dev', 'staging', 'sandbox', 'production']:
                 if self.env == 'production':
-                    return None
+                    self.env = None
+                    return self.env
                 else:
                     self.env = '-' + self.env
                     return self.env
