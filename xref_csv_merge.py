@@ -15,6 +15,11 @@ def hook(t):
 
 
 class Xrefmerge:
+    # Change bucket_name to the relevant environment
+    # Update the prefix
+    # Update dest_path
+    # cust_filename is the file received from customer. Must include ext_job_id_o &	new_ext_job_id columns
+
 
     def __init__(self, bucket_name='connector-hub-xref-dev', prefix='xref/in/account/474/job/',
                  dest_path='/Users/urieldabby/Documents/tmp/', cust_filename='n_job_id.csv', merged_csv='merge.csv'):
@@ -92,7 +97,7 @@ class Xrefmerge:
         print('%s file written successfully' % self.xref_file)
 
     def merge_csv(self):
-        # Merge CSV 1 with CSV 2 and create a new merge.csv file
+        # Merge cust_filename with xref_file and create a new merge.csv file
         try:
             print('Reading Files...\n')
             df1 = pd.read_csv(self.xref_file, index_col=False)
