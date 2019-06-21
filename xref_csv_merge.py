@@ -113,9 +113,11 @@ class Xrefmerge:
             print('Failed to Merge Files\n')
 
     def new_xref_files(self):
+        # Remove hidden system files
         self.remove_hidden_files()
         print('Writing Files to %sNEW_XREF_FILES' % self.dest_path)
         df3 = pd.read_csv(self.merged_csv)
+        # Change directory and create one if it doesn't exist
         try:
             os.chdir('%sNEW_XREF_FILES' % self.dest_path)
         except:
@@ -137,7 +139,6 @@ class Xrefmerge:
             raise
 
     def upload_to_s3(self):
-        # try:
         print("Uploading Files to s3://%s/%s..." % (self.bucket_name, self.prefix))
         os.chdir('%s/NEW_XREF_FILES' % self.dest_path)
         self.remove_hidden_files()
